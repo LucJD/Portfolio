@@ -295,5 +295,13 @@ header::after{
         display: block;
         margin: auto;
         width: 90%;
+        margin-bottom: 10px;
+    }
+    .proj-thumb{
+        height: 60%;
+    }
+    
+    #contact-label{
+        font-size: .8em;
     }
 }
