@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucas Dickerson: Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f1b46bd812.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div id="short-body">
+    <div class="short-body">
       <div class="card" id="header">
         <div class="transparent" id="header-img">
           <img src="images/logo-light.png" alt="logo" />
@@ -17,29 +21,123 @@
         <h4 id="header-city" class="transparent">Sardis, MS</h4>
         <div class="card-dark" id="btn-row">
           <div id="btn-first" class="transparent">
-            <button class="btn transparent">About Me</button>
-            <button class="btn transparent">Skills</button>
+            <a href="#info" class="btn transparent"> About Me </a>
+            <a href="#skills" class="btn transparent"> Skills </a>
           </div>
           <div id="btn-second" class="transparent">
-            <button class="btn transparent">Projects</button>
-            <button class="btn transparent">Contact</button>
+            <a href="#projects" class="btn transparent"> Projects </a>
+            <a href="#contact" class="btn transparent"> Contact </a>
           </div>
         </div>
         <a id="email" class="transparent" href="mailto:lucdickerson@gmail.com"
           >lucdickerson@gmail.com</a
         >
+        <div id="resume-div" class="card-dark">
+          <a
+            href="lp-resume.pdf"
+            class="btn transparent"
+            id="resume-btn"
+            target="_blank"
+            >Resume</a
+          >
+        </div>
       </div>
     </div>
-    <div id="info" class="long-body">
-      <h2 id="info-head" class="transparent">Who Am I?</h2>
+    <div id="info" class="long-body card">
+      <h2 class="card-head" class="card-dark">Who Am I?</h2>
       <p id="info-body" class="transparent">
-        I'm Lucas Padgett, an aspiring junior software developer. Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Pariatur in sapiente ad
-        eius eum cum dicta facilis harum distinctio corrupti recusandae quis
-        optio officia fuga doloremque nemo quos mollitia fugit suscipit vero
-        quod ex, cupiditate alias iste. Sed, ullam repellendus.
+        I'm Lucas Padgett, an aspiring junior software developer from Sardis, MS. I am a student from Base Camp Coding
+        Academy: Graduate Institute, and there I have been recognized for my driven effort, team-building and leadership skills, and 
+        volunteer work with peer mentoring and lecturing.
       </p>
-      <p class="transparent">Resume</p>
+    </div>
+    <div id="skills" class="short-body card">
+      <h2 class="card-head" class="card-dark">Skills</h2>
+      <div id="skill-row" class="transparent">
+        <button class="skill card-dark" id="skill-python">
+          <i class="fa-brands fa-python transparent"></i><br />python
+        </button>
+        <button class="skill card-dark" id="skill-java">
+          <i class="fa-brands fa-java transparent"></i><br />java
+        </button>
+        <button class="skill card-dark" id="skill-html">
+          <i class="fa-brands fa-html5 transparent"></i><br />html
+        </button>
+        <button class="skill card-dark" id="skill-css">
+          <i class="fa-brands fa-css3-alt transparent"></i><br />css
+        </button>
+        <button class="skill card-dark" id="skill-c++">
+          <i class="fa-solid fa-c transparent"></i><br />c++
+        </button>
+        <button class="skill card-dark" id="skill-management">
+          <i class="fa-solid fa-list-check transparent"></i><br />project
+          management
+        </button>
+        <button class="skill card-dark" id="skill-teamwork">
+          <i class="fa-solid fa-people-group transparent"></i><br />teamwork
+        </button>
+      </div>
+    </div>
+    <div id="projects" class="long-body card">
+      <h3 id="project-head" class="card-head">Projects</h3>
+      <div id="project-row" class="transparent">
+        <div class="project card-dark">
+          <a href="https://replit.com/@LucD2/Unit02Project-Cookbook#main.py" target="_blank">
+            <img class="proj-thumb"
+            src="images/cookbook-thumb.png"
+            alt="thumbnail of cookbook project"
+          />
+          </a>  
+          <p class="proj-info">Shopping List Generator<br>Python program that generates a Shopping
+            list based on a predetermined selection of recipes. Emphasis on scalability and user-accessibility.</a></p>
+        </div>
+        <div class="project card-dark">
+          <a href="https://replit.com/@PhilipM5/unit-1-project" target="_blank">
+            <img class="proj-thumb"
+            src="images/game-thumb.png"
+            alt="thumbnail of adventure game project"
+          />
+          </a>
+         
+          <p class="proj-info">Adventure Game<br>Python program utilizing OOP about an escape room game. Emphasis on user-accessibility and program durability.</p>
+        </div>
+        <div class="project card-dark">
+          <a href="https://lucjd.github.io/GOAT/" target="_blank">
+            <img class="proj-thumb"
+            src="images/goat-thumn.png"
+            alt="thumbnail of webpage project"
+          />
+          </a>
+
+          <p class="proj-info">GOAT<br>First webpage that features my favorite online artist. Emphasis on responsive webpage design.</p>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="long-body transparent">
+      <div id="contact-label">✉ lucdickerson@gmail.com!</div>
+      <div id="contact-nav" class="card-dark">
+        <button
+          id="contact-email"
+          class="btn transparent"
+          onclick="window.open('mailto:lucdickerson@gmail.com', '_blank')"
+        >
+          <i class="fa fa-paper-plane transparent"></i> Email
+        </button>
+        <button
+          id="contact-linkedin"
+          class="btn transparent contact-btn"
+          onclick="window.open('https://www.linkedin.com/in/lucas-dickerson-450a471b7/',
+          '_blank')"
+        >
+          <i class="fa fa-linkedin transparent contact-btn"></i> LinkedIn
+        </button>
+        <button
+          id="contact-github"
+          class="btn transparent"
+          onclick="window.open('https://github.com/LucJD', '_black')"
+        >
+          <i class="fa fa-github transparent contact-btn"></i> GitHub
+        </button>
     </div>
   </body>
 </html>
